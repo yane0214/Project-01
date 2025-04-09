@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Matcharap, Machikip</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style> 
+        :root {
+            --matcha-green: #2d8c4f;
+            --matcha-light-green: #90ee90;
+            --background-color: #f4f4f4;
+        }
+        
+        head {
+            background-color: #E5FDD1;
+        }
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #E5FDD1;
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .navbar {
+            background-color: #94A684;
+        }
+    
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white !important;
+        }
+    
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bg.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            width: 100%;
+            max-width: 100%;
+        }
+    
+        .featured-drinks .card {
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+    
+        .featured-drinks .card:hover {
+            transform: scale(1.05);
+        }
+    
+        .featured-drinks .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+    
+        .footer {
+            background-color: #94A684;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+        }
+        
+        /* Remove any potential right border or margin issues */
+        .container, .container-fluid, .row {
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+            max-width: 100%;
+        }
+        
+        /* Ensure all sections are full width */
+        section {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MATCHARAP, MACHIKIP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Our Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="picture">
+            <h1>MATCHARAP, MACHIKIP</h1>
+            <p>Handcrafted Matcha Drinks for Every Taste</p>
+            <a href="menu.html" class="btn btn-light mt-3">Explore Our Menu</a>
+        </div>
+    </section>
+
+     <!-- Featured Drinks Section -->
+    <section class="featured-drinks py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Featured Drinks</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="MatchaLatte.png" class="card-img-top" alt="Matcha Latte">
+                        <div class="card-body">
+                            <h5 class="card-title">Matcha Latte</h5>
+                            <p class="card-text">Creamy, smooth, and perfectly balanced. Our signature Matcha Latte combines premium matcha with steamed milk.</p>
+                            <p class="fw-bold text-success">₱120</p>
+                            <a href="menu.html" class="btn btn-outline-success">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="StrawberryMatcha.png" class="card-img-top" alt="Strawberry Matcha">
+                        <div class="card-body">
+                            <h5 class="card-title">Strawberry Matcha</h5>
+                            <p class="card-text">A delightful fusion of fresh strawberries and our premium matcha. A perfect blend of fruity and earthy flavors.</p>
+                            <p class="fw-bold text-success">₱130</p>
+                            <a href="menu.html" class="btn btn-outline-success">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="MatchaWhite.png" class="card-img-top" alt="Matcha White Chocolate">
+                        <div class="card-body">
+                            <h5 class="card-title">Matcha White Chocolate</h5>
+                            <p class="card-text">Indulgent white chocolate meets our premium matcha. A sweet and creamy treat that satisfies every craving.</p>
+                            <p class="fw-bold text-success">₱125</p>
+                            <a href="menu.html" class="btn btn-outline-success">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2025 MATCHARAP, MACHIKIP. All Rights Reserved.</p>
+            <div>
+                <a href="#" class="text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-white mx-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
