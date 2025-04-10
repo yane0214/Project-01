@@ -5,97 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style> 
-        :root {
-            --matcha-green: #2d8c4f;
-            --matcha-light-green: #90ee90;
-            --background-color: #f4f4f4;
-        }
-        
-        head {
-            background-color: #E5FDD1;
-        }
-    
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #E5FDD1;
-            color: #333;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-            max-width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    
-        .navbar {
-            background-color: #94A684;
-        }
-    
-        .navbar-brand, .navbar-nav .nav-link {
-            color: white !important;
-        }
-    
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bg.png');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-            width: 100%;
-            max-width: 100%;
-        }
-    
-        .featured-drinks .card {
-            transition: transform 0.3s ease;
-            margin-bottom: 20px;
-        }
-    
-        .featured-drinks .card:hover {
-            transform: scale(1.05);
-        }
-    
-        .featured-drinks .card-img-top {
-            height: 250px;
-            object-fit: cover;
-        }
-    
-        .footer {
-            background-color: #94A684;
-            color: white;
-            padding: 20px 0;
-            width: 100%;
-        }
-        
-        /* Remove any potential right border or margin issues */
-        .container, .container-fluid, .row {
-            margin-right: auto;
-            margin-left: auto;
-            padding-right: 15px;
-            padding-left: 15px;
-            max-width: 100%;
-        }
-        
-        /* Ensure all sections are full width */
-        section {
-            width: 100%;
-            max-width: 100%;
-            overflow: hidden;
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">MATCHARAP, MACHIKIP</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Matcharap, Machikip Logo" class="logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Our Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -106,7 +33,8 @@
     <section class="hero">
         <div class="picture">
             <h1>MATCHARAP, MACHIKIP</h1>
-            <p>Handcrafted Matcha Drinks for Every Taste</p>
+            <p>Monday - Friday: 8:00 AM - 8:00 PM<br>
+                Saturday - Sunday: 9:00 AM - 7:00 PM</p>
             <a href="menu.html" class="btn btn-light mt-3">Explore Our Menu</a>
         </div>
     </section>
